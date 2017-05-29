@@ -1,5 +1,5 @@
 var api = "/statics/api.json";
-var http = "http://www.geonames.org/flags/x/"; // change to lowercase when using this
+var http = "/statics/flags/";
 var ext = ".gif";
 
 var entries = [];
@@ -13,10 +13,11 @@ var total = 0;
 
 $.getJSON(api, function(data) {
 	$.each(data.Results, function(key, val) {
-		var tmp_list = [];
-    	tmp_list.push(key);
-		tmp_list.push(val.Name);
-		entries.push(tmp_list);
+		if (key != "EU" && key != "AP")
+			var tmp_list = [];
+	    	tmp_list.push(key);
+			tmp_list.push(val.Name);
+			entries.push(tmp_list);
 	});
 });
 

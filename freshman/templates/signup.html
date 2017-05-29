@@ -37,6 +37,9 @@
 			<div>
 				<p id="conditions">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 			</div>
+			{% if errors %}
+				<div id="div-error"><p>{{errors}}</p></div>
+			{% endif %}
 			<div id="div-signup">
 				<button class="btn btn-success" type="submit">Sign Up</button>
 			</div>

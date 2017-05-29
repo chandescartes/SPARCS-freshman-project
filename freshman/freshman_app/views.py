@@ -28,7 +28,12 @@ def signup_view(request):
 				return redirect('home')
 
 			else:
-				print(form.errors)
+				for key in form.errors.as_data():
+					error = form.errors.as_data()[key][0]
+					break
+				print(form.errors.as_data())
+				return render(request, 'signup.html', {'errors': error})
+				
 		else:
 			form = UserCreateForm()
 		
