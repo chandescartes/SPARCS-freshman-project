@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Login</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="/statics/signup.css" rel="stylesheet"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" style="opacity: 0.8">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand active" href="/home">Home</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="/flag">Flag Quiz</a></li>
+				<li><a href="/map">Map the Capital</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+					{% if name %}
+						<li><a>Welcome, <b>{{name}}</b></a></li>
+						<li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+					{% else %}
+						<li><a href="/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+						<li class="active"><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+					{% endif %}
+				
+			</ul>
+		</div>
+	</nav>
+	<div class="my-container">
+		<p id="create">Leaderboard</p>
+		<div class="div-row">
+			<p class="p-section">Flag Quiz</p>
+			<table class="table">
+				<thead>
+					<th>#</th>
+					<th>User</th>
+        			<th>Score</th>
+				</thead>
+				<tbody>
+					{% for el in flag_scores %}
+						<tr>
+						{% for e in el %}
+							<td>{{e}}</td>
+						{% endfor %}
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+		<br>
+		<div>
+			<p class="p-section">Map the Capital</p>
+			<table class="table">
+				<thead>
+					<th>#</th>
+					<th>User</th>
+        			<th>Score</th>
+				</thead>
+				<tbody>
+					{% for el in map_scores %}
+						<tr>
+						{% for e in el %}
+							<td>{{e}}</td>
+						{% endfor %}
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+
+</body>
+</html>

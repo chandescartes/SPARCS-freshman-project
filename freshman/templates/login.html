@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Login</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="/statics/signup.css" rel="stylesheet"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	{% include 'navbar.html' %}
+
+	<form method="POST">
+		{% csrf_token %}
+		<div class="my-container">
+			<p id="create">Login</p>
+			<div class="div-row">
+				<div>
+					<input class="form-control div-input" type="text" placeholder="Enter User ID" name="username" required>
+				</div>
+			</div>
+			<div class="div-row">
+				<div><input class="form-control div-input" type="password" placeholder="Enter Password" name="password" required></div>
+			</div>
+			{% if errors %}
+				<div id="div-error"><p>{{errors}}</p></div>
+			{% endif %}
+			<div id="div-login">
+				<button class="btn btn-success btn-block" type="submit" class="">Login</button>
+			</div>
+		</div>
+	</form>
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Map</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="/statics/map.css" rel="stylesheet"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="/statics/jquery.countdown-2.2.0/jquery.countdown.min.js"></script>
+	<script src="/statics/map.js" type="text/javascript"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	{% include 'navbar.html' %}
+
+	<div id="div-top">&nbsp;</div>
+	<div class="div-map"><img src="/statics/map.jpg" id="map"/></div>
+	<div class="div-common"><button id="start-btn">START!</button></div>
+	<div class="row div-info">
+		<div class="col-md-6" id="city"></div>
+		<div class="col-md-2 div-score" id="div-score-text"></div>
+		<div class="col-md-2 div-score" id="div-score-count"></div>
+		<div class="col-md-1 div-score" id="div-score-add"></div>
+	</div>
+</body>
+</html>

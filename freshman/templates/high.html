@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Login</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="/statics/signup.css" rel="stylesheet"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	{% include 'navbar.html' %}
+	
+	<div class="my-container">
+		<p id="create">Highscores</p>
+		<div class="div-row">
+			<p class="p-section">Flag Quiz</p>
+			<table class="table">
+				<thead>
+					<th>#</th>
+        			<th>Score</th>
+				</thead>
+				<tbody>
+					{% for el in flag_scores %}
+						<tr>
+						{% for e in el %}
+							<td>{{e}}</td>
+						{% endfor %}
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+		<br>
+		<div>
+			<p class="p-section">Map the Capital</p>
+			<table class="table">
+				<thead>
+					<th>#</th>
+        			<th>Score</th>
+				</thead>
+				<tbody>
+					{% for el in map_scores %}
+						<tr>
+						{% for e in el %}
+							<td>{{e}}</td>
+						{% endfor %}
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+
+</body>
+</html>

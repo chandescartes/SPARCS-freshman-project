@@ -1,0 +1,56 @@
+html {
+  text-align: center;
+}
+
+body {
+	background-image: url("home-background.psd");
+	background-repeat: no-repeat;
+	background-size: 100% 100vh;
+}
+
+.div-btn {
+	height: 50vh;
+	padding: 19vh;
+}
+
+.btn-home {
+	width: 500px;
+	height: 100px;
+	padding: 18px;
+	color: white;
+	font-family: Futura, Verdana, sans-serif;
+	letter-spacing: 1px;
+	font-size: 36px;
+	text-align: center;
+	border-radius: 7px;
+    border-color: #A60400;
+    border-width: 4px;
+    border-style: none;
+    background: none;
+}
+
+.btn-flag {
+	background-color: #01939A;
+}
+
+.btn-flag:hover {
+	background-color: #1D7373;
+}
+
+.btn-map {
+	background-color: #84B22D;
+}
+
+.btn-map:hover {
+	background-color: #679B00;
+}
+
+#flag-icon {
+	width: 32px;
+	height: 32px;
+}
+
+#map-icon {
+	width: 20px;
+	height: 20px;
+}

@@ -1,0 +1,64 @@
+html {
+  text-align: center;
+}
+
+body {
+	background-image: url("home-background.psd");
+	background-color: #DF5757;
+	background-repeat: no-repeat;
+	background-size: 100% 100vh;
+    padding-top: 50px;
+}
+
+.my-container {
+	width: 40%;
+	margin: 50px 30% 30px 30%;
+	padding: 10px 20px 10px 20px;
+	width: 500px;
+	background-color: rgba(255, 255, 255, 0.85);
+	border-radius: 10px;
+	text-align: left;
+}
+
+.div-input {
+	margin-bottom: 10px;
+}
+
+.div-text {
+	margin-top: 20px;
+	margin-bottom: 3px;
+}
+
+.div-row {
+	margin: 10px 0px 10px 0px;
+}
+
+.p-section {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 10px 0px 10px 0px;
+}
+
+#div-signup {
+	text-align: right;
+}
+
+#div-login {
+	margin: 10px 0px 10px 0px;
+}
+
+#div-error {
+	text-align: center;
+	color: grey;
+}
+
+#create {
+	text-align: center;
+	font-size: 30px;
+	font-family: "Century Gothic", Arial;
+}
+
+#conditions {
+	margin-top: 30px;
+	text-align: right;
+}

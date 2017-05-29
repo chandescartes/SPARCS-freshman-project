@@ -1,0 +1,84 @@
+html {
+  text-align: center;
+}
+
+body {
+	background-color: #D9EE88;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.div-info {
+	font-size: 28px;
+}
+
+.div-score {
+	font-family: "Lucida Console", "Monaco";
+	color: #932A44;
+	text-align: right;
+}
+
+#start-btn {
+	width: 500px;
+	height: 100px;
+	font-size: 60px;
+	color: white;
+	font-family: Futura, Verdana, sans-serif;
+	letter-spacing: 5px;
+	font-size: 36px;
+	text-align: center;
+	border-radius: 7px;
+    border-color: #A60400;
+    border-width: 4px;
+    border-style: none;
+    background: none;
+    background-color: #994824;
+}
+
+#start-btn:hover {
+	background-color: #63270C;
+}
+
+/*#title {
+	font-size: 40px;
+	font-family: "Arial Rounded MT Bold", Arial;
+	margin: 80px 10px 10px 10px;
+	font-weight: bold;
+	color: #993624;
+}*/
+
+#user-pin {
+	width: 30px;
+	height: 30px;
+}
+
+#real-pin {
+	width: 30px;
+	height: 30px;
+}
+
+#map {
+	width: 1028px;
+	height: 518px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	cursor: crosshair;
+	border-width: 5px;
+	border-style: solid;
+	border-radius: 5px;
+	border-color: #BADD67;
+}
+
+#div-top {
+	margin-top: 20px;
+	font-family: "Lucida Console", "Monaco";
+	font-size: 16px;
+}
+
+#div-score-add {
+	padding-top: 4px;
+	font-size: 20px;
+}
+/*#div-title {
+	margin: 30px;
+}*/
