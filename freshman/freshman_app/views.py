@@ -137,7 +137,6 @@ def add_map_view(request):
 			post = MapScores(username=request.user.username, score=score)
 			post.save()
 			return HttpResponse({})
-	print("ASDF")
 	return HttpResponse({})
 
 def logout_view(request):

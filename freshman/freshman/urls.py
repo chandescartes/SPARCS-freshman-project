@@ -20,7 +20,7 @@ from freshman_app import views as core_views
 
 urlpatterns = [
     url(r'^$', core_views.home_view, name='home'),
-    url(r'^admin/$', admin.site.urls),
+    url(r'^admin/', admin.site.urls),
     url(r'^signup/$', core_views.signup_view, name='signup'),
     url(r'^login/$', core_views.login_view, name='login'),
     url(r'^home/$', core_views.home_view, name='home'),
